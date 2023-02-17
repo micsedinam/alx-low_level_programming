@@ -4,7 +4,7 @@
 /**
  * main - this is the main function of the programme
  *
- * return: 0 is the end of executable code
+ * Return:0
  */
 int main(void)
 {
