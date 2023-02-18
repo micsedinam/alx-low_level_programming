@@ -11,22 +11,37 @@
 
 int main(void)
 {
-	int a, b;
+	int c, i, k, j;
 
-	for (a = 0; a <= 98; a++)
+	for (c = 48; c <= 57; c++)
 	{
-	    for (b = a + 1; b <= 99; b++)
-	    {
-		    putchar((a/10) + '0');
-		    putchar((a%10) + '0');
-		    putchar(' ');
-		    putchar((b/10) + '0');
-		    putchar((b%10) + '0');
-		    if (a == 98 && b == 99)
-			    continue;
-		    putchar(',');
-		    putchar(' ');
-	    }
+		for (i = 48; i <= 57; i++)
+		{
+			for (k = 48; k <= 57; k++)
+			{
+				for (j = 48; j <= 57; j++)
+				{
+				if (((k + j) > (c + i) &&  k >= c) || c < k)
+				{
+					putchar(c);
+					putchar(i);
+					putchar(' ');
+					putchar(k);
+					putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
+				}
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
