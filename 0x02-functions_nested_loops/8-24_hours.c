@@ -27,11 +27,11 @@ void jack_bauer(void)
 				mins_ones = '0';
 				while (mins_ones < 58)
 				{
-					_putchar(hours_tens);
-					_putchar(hours_ones);
+					_putchar(hrs_tens);
+					_putchar(hrs_ones);
 					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
+					_putchar(mins_tens);
+					_putchar(mins_ones);
 					_putchar('\n');
 					mins_ones++;
 				}
