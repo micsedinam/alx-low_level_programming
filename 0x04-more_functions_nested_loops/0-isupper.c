@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *@c: is a parameter to be checked
+ * _isupper - check the code.
+ * @c: is a parameter to be checked
  * Return: Always 0.
  */
 
